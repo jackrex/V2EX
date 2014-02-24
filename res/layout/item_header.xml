@@ -1,0 +1,46 @@
+<!--
+  ~ Copyright (c) 2014.
+  ~ Jackrex
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/top_navigate"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:background="#2f85c4"
+                android:orientation="horizontal">
+    <ImageButton
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+
+            android:scaleType="fitCenter"
+            android:background="@null"/>
+
+    <ImageButton
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:background="@null"
+            android:visibility="visible"/>
+
+    <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:ellipsize="end"
+            android:textColor="#ffffff"/>
+
+</RelativeLayout>

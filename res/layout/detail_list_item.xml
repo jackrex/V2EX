@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <LinearLayout
+            android:id="@+id/top_header"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/default_headportrait_mask_402x" >
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/default_headportrait_402x"
+                    android:scaleType="fitCenter" />
+                
+                    <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/default_headportrait_mask_802x"
+                    android:scaleType="fitCenter" />
+                
+            </RelativeLayout>
+            
+            
+            <LinearLayout    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+                 android:orientation="vertical" >
+            
+            
+            <LinearLayout 
+                
+                    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_gravity="top"
+                >
+
+            <TextView
+                android:id="@+id/tv_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.333333dp"
+                android:text="匿名"
+                android:textColor="#5A6F8C"
+                android:textSize="12.66667sp"
+                android:textStyle="bold"
+                 />
+
+                        
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical"
+                android:visibility="invisible"
+                >
+            
+                         <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_time2x" 
+                android:layout_toLeftOf="@+id/tv_time"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="6分钟前"
+                android:textColor="#A3ACBA"
+                android:textSize="10.66667sp" 
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dp"
+                />
+           </LinearLayout>
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+               >
+
+                <!-- android:background="#A3ACBA" -->
+            </RelativeLayout>
+            
+
+        </LinearLayout>
+        
+            </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:text="是实际付款了就是雷锋精神了房价是否接受了房间了顺丰快速减肥了快速减肥了双方将老师dfsdfsd"
+            android:textSize="15dp"
+            android:textColor="#807F85" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comments_count"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/content"
+        android:background="@drawable/louceng2x"
+        android:layout_alignParentRight="true"
+        android:gravity="top|right"
+        android:paddingRight="2dp"
+         >
+
+        <TextView
+            android:id="@+id/comment_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginTop="7dp">
+    </RelativeLayout>
+
+</RelativeLayout>

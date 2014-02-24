@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <Button
+        android:id="@+id/about"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/buttonsel"
+        android:textColor="#ffe1e1e1"
+        android:textSize="25sp"
+        android:text="About" />
+
+    <ListView 
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/about"
+        android:background="@null"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:listSelector="@null"
+        android:cacheColorHint="#00000000"
+        android:id="@+id/slideListview"
+        ></ListView>
+    
+   
+
+</RelativeLayout>

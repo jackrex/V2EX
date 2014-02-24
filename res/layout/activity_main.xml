@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe1e1e1"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.65"
+        android:background="#00000000"
+        android:src="@drawable/toggle" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <info.jackrex.v2ex.uibase.XListView
+            android:id="@+id/xlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000" 
+              android:descendantFocusability="afterDescendants"
+            android:overScrollMode="never"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:background="@null"
+            android:divider="@null"
+            android:dividerHeight="1px"
+            >
+        </info.jackrex.v2ex.uibase.XListView>
+    </FrameLayout>
+
+</LinearLayout>

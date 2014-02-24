@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="13dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:background="@drawable/index_white_bg" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp" >
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_launcher" 
+            android:layout_marginRight="13dp"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_toRightOf="@+id/iv_img" 
+                android:layout_marginRight="13dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_header"
+               >
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="房价是否接受了d"
+                    android:textColor="#5D6A7D"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/default_headportrait_mask_402x" 
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/default_headportrait_402x" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="大吉他"
+                    android:textColor="#949EAF"
+                    android:textSize="11dp" 
+                    android:textStyle="bold"
+                     android:layout_gravity="center_vertical"/>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+
+                <!-- android:background="#A3ACBA" -->
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" 
+                     android:layout_gravity="center_vertical|right"
+                     android:layout_weight="1" 
+                     >
+                    
+
+                    <TextView
+                        android:id="@+id/tv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="6dp"
+                        android:text="6674"
+                            android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:gravity="center_vertical"
+                          android:textColor="#FFF"
+                        android:textSize="11dp" 
+                        android:background="@drawable/chezhubg"
+                        />
+
+                    
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+    
+    <!-- 
+    
+    android:layout_centerVertical="true"
+     -->
+    
+</RelativeLayout>

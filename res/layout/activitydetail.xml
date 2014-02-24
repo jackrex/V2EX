@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <info.jackrex.v2ex.ui.HeaderView 
+    android:id="@+id/headerview"
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    ></info.jackrex.v2ex.ui.HeaderView>
+    
+      <LinearLayout
+        android:id="@+id/top_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttom_wrapper"
+        android:layout_below="@+id/header" 
+        android:orientation="vertical">
+        
+        <info.jackrex.v2ex.uibase.XListView 
+           android:id="@+id/comments_lists"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        android:orientation="vertical"
+        android:descendantFocusability="afterDescendants"
+        android:scrollbars="none"   
+        android:listSelector="#00000000"  
+        android:fadingEdge="none"
+            ></info.jackrex.v2ex.uibase.XListView>
+    </LinearLayout>
+
+
+   
+       
+    <RelativeLayout
+        android:id="@+id/buttom_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:background="#F1F1F1"
+        android:minHeight="40dp"
+       	android:visibility="gone"
+        android:paddingBottom="3dp"
+        >
+ 	<LinearLayout 
+        android:id="@+id/editcar_divider"
+        android:layout_height="1px"
+        android:layout_width="fill_parent"
+        android:background="#d3d3d5"
+        android:layout_alignParentTop="true"
+        ></LinearLayout>
+        
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_centerVertical="true"
+            android:hint="请输入评论内容" 
+            android:textColor="#949494"
+            android:scrollbars="vertical"
+            android:maxHeight="120dp"
+            android:minHeight="40dp"
+           	android:background="@drawable/input_box_bg"
+            />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="发送" 
+            android:background="@null"
+            android:textColor="#949494"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

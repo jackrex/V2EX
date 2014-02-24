@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/top_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttom_wrapper"
+        android:layout_below="@+id/header" 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_header"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="13dp">
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/default_headportrait_mask_402x" >
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/default_headportrait_402x"
+                    android:scaleType="fitCenter" />
+                
+                  <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/default_headportrait_mask_802x"
+                    android:scaleType="fitCenter" />
+                
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.333333dp"
+                android:text="匿名"
+                android:textColor="#5A6F8C"
+                android:textSize="12.66667sp"
+                android:textStyle="bold"
+                 />
+
+            
+           
+        </LinearLayout>
+
+      
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="12dp" >
+
+            <RelativeLayout
+                android:id="@+id/text_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4D4D52"
+                    android:text="了时间浪费时间了房价是雷锋精神了世界疯了双方建立收费记录上飞机" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    <RelativeLayout  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                >
+        
+        
+                <TextView
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content" 
+                    android:id="@+id/tv_comment"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:text="24评论"
+                    android:textColor="#A3ACBA"
+                    android:textSize="12.66667sp" />
+
+                <ImageView
+                    android:id="@+id/iv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/icon_talk2x" />
+                
+                
+                 <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_time2x" 
+                android:layout_toLeftOf="@+id/tv_time"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="6分钟前"
+                android:textColor="#A3ACBA"
+                android:textSize="10.66667sp" 
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dp"
+                />
+        
+    </RelativeLayout>
+    
+
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="17dp"
+         >
+    </RelativeLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

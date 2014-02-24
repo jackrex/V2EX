@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="selected_view" type="id"/>
+
+    <!-- PullToRefresh -->
+    <item name="ptr_content" type="id"/>
+    <item name="ptr_text_opaque_bg" type="id"/>
+    <item name="ptr_text" type="id"/>
+    <item name="ptr_progress" type="id"/>
+
+</resources>

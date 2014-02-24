@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="55dp"
+              android:id="@+id/bg_menu"
+              android:orientation="vertical"
+              android:gravity="center"
+             
+              >
+<!--    android:background="#2580c5"  -->
+    <RelativeLayout 
+        android:id="@+id/rela"
+           android:layout_width="fill_parent"
+              android:layout_height="55dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            
+        >
+    
+        <!--   android:background="#1b71ae" -->
+        
+    <TextView
+            android:id="@+id/dialogItem"
+            android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+            android:text="2012-10-13"
+            android:textSize="30sp"
+            android:textColor="#fff1f1f1"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            />
+    
+    
+    
+        <LinearLayout 
+            
+            android:id="@+id/bottom1"
+            
+             android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:layout_marginRight="10dp"
+        ></LinearLayout>
+    
+    <LinearLayout 
+        
+        android:id="@+id/bottom"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:layout_marginRight="10dp"
+        ></LinearLayout>
+    
+</RelativeLayout>
+</LinearLayout>

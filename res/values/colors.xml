@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="navigation_title_color">#414146</color>
+    <color name="main_background">#ffffff</color>
+    <color name="index_background">#d7dce0</color>
+    <color name="coverBackground">#88000000</color>
+	<color name="xianxing_green">#A1D876</color>
+	<color name="xianxing_red">#ff715a</color>
+    <drawable name="darkgray">#404040ff</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="red">#ff00ff</drawable>
+    <drawable name="green">#0ff0ff</drawable>
+    <drawable name="lightgray">#c0c0c0ff</drawable>
+    <drawable name="yellow">#ffff0f</drawable>
+    <drawable name="gray">#808080</drawable>
+    <drawable name="magenta">#ff0fff</drawable>
+    <drawable name="cyan">#0fffff</drawable>
+    <drawable name="transparent_background">#00ffffff</drawable>
+    <drawable name="translucent_background">#C2CE99</drawable>
+    <drawable name="blue">#0000FF</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="pink">#FFC8FF</drawable>
+    <drawable name="darkgreen">#008800</drawable>
+    <drawable name="transparent">#00000000</drawable>
+     <drawable name="transparent_1">#00000000</drawable>
+    <drawable name="title_bar_background">#414146</drawable>
+    <drawable name="tag_background">#b3b3b5</drawable>
+    <drawable name="search_bar">#717174</drawable>
+    <drawable name="city_tag_background">#ccd1d5</drawable>
+    <drawable name="tag_text_backgorund">#55595e</drawable>
+    <!-- weekPerWeather fragment -->
+    
+    
+    
+    
+    
+    <drawable name="fee_dialog_blue">#1B71AE</drawable>
+    
+    <drawable name="fee_dialog_blue_1">#1B71AE</drawable>
+    
+     <color name="main_blue_light">#FF33B5E5</color>
+    <color name="weather_date">#55595e</color>
+    <color name="temprature">#2c2c2c</color>
+    <color name="limitation">#00b1f1</color>
+    <!-- index fragment -->
+    <color name="card_pressed">#ebeef1</color>
+    <color name="compare_red">#e84c3d</color>
+    <color name="compare_green">#27ae61</color>
+    <!-- fee list fragment -->
+    <color name="menu_pressed">#2f3033</color>
+    <color name="menu">#3f4042</color>
+    <color name="transparent">#00000000</color>
+    <!-- fee report -->
+    <color name="chart_condion_item">#cdcdcd</color>
+    <color name="chart_condion_item_press">#37b9e7</color>
+    <!-- care detail -->
+    <color name="gray">#DBDBDB</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    
+    <color name="lightblue">#3381e3</color>
+</resources>
