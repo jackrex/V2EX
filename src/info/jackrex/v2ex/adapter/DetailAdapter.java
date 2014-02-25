@@ -1,8 +1,8 @@
 package info.jackrex.v2ex.adapter;
 
-import info.jackrex.v2ex.ImageUtils;
 import info.jackrex.v2ex.R;
 import info.jackrex.v2ex.entity.DetailEntity;
+import info.jackrex.v2ex.utils.ImageUtils;
 
 import java.util.List;
 

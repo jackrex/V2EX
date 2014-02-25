@@ -1,9 +1,11 @@
 package info.jackrex.v2ex;
 
 import info.jackrex.v2ex.adapter.DetailAdapter;
+import info.jackrex.v2ex.base.BaseActivity;
 import info.jackrex.v2ex.entity.DetailEntity;
 import info.jackrex.v2ex.entity.HomeEntity;
 import info.jackrex.v2ex.uibase.XListView;
+import info.jackrex.v2ex.utils.ImageUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,6 +29,7 @@ import android.widget.TextView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageLoadingListener;
+import com.umeng.analytics.MobclickAgent;
 
 public class DetailActivity extends BaseActivity {
 
@@ -95,6 +98,20 @@ public class DetailActivity extends BaseActivity {
 		
 	
 		
+	}
+	
+	
+	
+	
+	public void onResume() {
+	    super.onResume();
+	    MobclickAgent.onPageStart("Detail");
+	    MobclickAgent.onResume(this);
+	}
+	public void onPause() {
+	    super.onPause();
+	    MobclickAgent.onPageEnd("Detail"); // 保证 onPageEnd 在onPause 之前调用,因为 onPause 中会保存信息 
+	    MobclickAgent.onPause(this);
 	}
 	
 	private void getDatafromJsoup(String url) {

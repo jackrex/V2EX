@@ -1,5 +1,7 @@
 package info.jackrex.v2ex;
 
+import info.jackrex.v2ex.ui.DepthPageTransformer;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,12 +28,15 @@ public class GuideActivity extends Activity implements OnPageChangeListener{
 	private List<View> views;
 	private ViewPagerAdapter vpAdapter;
 	private int currentIndex;
+	private SharedPreferences sharedPreferences;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_guide);
 		initViews();
 		initPageNum();
+		sharedPreferences =getSharedPreferences("start", MODE_PRIVATE);
+	
 	}
 	
     @Override
@@ -134,6 +139,10 @@ public class GuideActivity extends Activity implements OnPageChangeListener{
 	        activity.startActivity(intent);
 	        overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
 	        activity.finish();
+	    	Editor editor = sharedPreferences.edit();
+			editor.putBoolean("started", true);
+			editor.commit();
+	        
 		}
 		
 		public void setGuided() {

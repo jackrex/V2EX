@@ -3,8 +3,10 @@
  * Jackrex
  */
 
-package info.jackrex.v2ex;
+package info.jackrex.v2ex.base;
 
+import info.jackrex.v2ex.R;
+import info.jackrex.v2ex.R.id;
 import info.jackrex.v2ex.ui.HeaderView;
 import android.app.Activity;
 import android.app.AlertDialog;
