@@ -1,9 +1,11 @@
 package info.jackrex.v2ex;
 
 import info.jackrex.v2ex.adapter.DetailAdapter;
+import info.jackrex.v2ex.base.BaseActivity;
 import info.jackrex.v2ex.entity.DetailEntity;
 import info.jackrex.v2ex.entity.HomeEntity;
 import info.jackrex.v2ex.uibase.XListView;
+import info.jackrex.v2ex.utils.ImageUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,5 +1,8 @@
-package info.jackrex.v2ex;
+package info.jackrex.v2ex.ui;
 
+import info.jackrex.v2ex.R;
+import info.jackrex.v2ex.R.id;
+import info.jackrex.v2ex.R.layout;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Typeface;

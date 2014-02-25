@@ -1,5 +1,7 @@
 package info.jackrex.v2ex;
 
+import info.jackrex.v2ex.ui.DepthPageTransformer;
+
 import java.util.ArrayList;
 import java.util.List;
 

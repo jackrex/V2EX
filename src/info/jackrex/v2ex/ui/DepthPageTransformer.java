@@ -1,4 +1,4 @@
-package info.jackrex.v2ex;
+package info.jackrex.v2ex.ui;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

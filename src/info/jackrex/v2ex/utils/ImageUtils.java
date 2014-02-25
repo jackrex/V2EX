@@ -1,4 +1,4 @@
-package info.jackrex.v2ex;
+package info.jackrex.v2ex.utils;
 
 
 import java.io.ByteArrayInputStream;

@@ -1,5 +1,7 @@
 package info.jackrex.v2ex;
 
+import info.jackrex.v2ex.base.BaseActivity;
+
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
