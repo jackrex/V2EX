@@ -6,6 +6,9 @@ V2EX unofficial App
 
 这个东西没有啥技术含量 高手误喷。纯属个人兴趣.
 
+
+顺便这个破代码用恶❤的Eclipse开发，入手AndroidStudio 一个月后，这基本是最后一个使用
+Eclipse 的工程。这里推荐强烈使用AndroidDever 使用AndroidStuido
 ***
 
 
