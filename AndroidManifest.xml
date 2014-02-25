@@ -39,7 +39,7 @@
         
         
         <meta-data android:value="YOUR_APP_KEY" android:name="UMENG_APPKEY"></meta-data>
-<meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
+<meta-data android:value="530c93c556240bfac503b6ff" android:name="UMENG_CHANNEL"/>
 
 
 <service

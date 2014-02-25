@@ -29,6 +29,7 @@ import android.widget.TextView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageLoadingListener;
+import com.umeng.analytics.MobclickAgent;
 
 public class DetailActivity extends BaseActivity {
 
@@ -97,6 +98,20 @@ public class DetailActivity extends BaseActivity {
 		
 	
 		
+	}
+	
+	
+	
+	
+	public void onResume() {
+	    super.onResume();
+	    MobclickAgent.onPageStart("Detail");
+	    MobclickAgent.onResume(this);
+	}
+	public void onPause() {
+	    super.onPause();
+	    MobclickAgent.onPageEnd("Detail"); // 保证 onPageEnd 在onPause 之前调用,因为 onPause 中会保存信息 
+	    MobclickAgent.onPause(this);
 	}
 	
 	private void getDatafromJsoup(String url) {
