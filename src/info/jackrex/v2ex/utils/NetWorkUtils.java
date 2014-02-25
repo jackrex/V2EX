@@ -9,10 +9,7 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-/**
- * @author wjx
- *
- */
+
 public class NetWorkUtils {
 	private static final String LOG_TAG = NetWorkUtils.class.getCanonicalName();
 
@@ -37,28 +34,7 @@ public class NetWorkUtils {
 	}  
 	
 	
-	/**
-	 * 判断是否有网络连接
-	 */
-	public static boolean isNetworkAvailable(Context context) {
-
-	       ConnectivityManager manager = (ConnectivityManager) context 
-	              .getApplicationContext().getSystemService(  
-	                     Context.CONNECTIVITY_SERVICE);  
-	        
-	       if (manager == null) {  
-	           return false;  
-	       }  
-	        
-	       NetworkInfo networkinfo = manager.getActiveNetworkInfo();  
-	        
-	       if (networkinfo == null || !networkinfo.isAvailable()) {  
-	           return false;  
-	       }  
-	   
-	       return true;  
-	}
-
+	
 	/**
 	 * 判断网络是否为漫游
 	 */

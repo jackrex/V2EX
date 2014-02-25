@@ -28,7 +28,7 @@
         android:background="@null"
         android:divider="@null"
         android:dividerHeight="1dp"
-        android:listSelector="@null"
+        android:listSelector="#00000000"
         android:cacheColorHint="#00000000"
         android:id="@+id/slideListview"
         ></ListView>
