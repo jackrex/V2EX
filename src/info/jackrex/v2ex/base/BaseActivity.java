@@ -5,6 +5,7 @@
 
 package info.jackrex.v2ex.base;
 
+import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 import info.jackrex.v2ex.R;
 import info.jackrex.v2ex.R.id;
 import info.jackrex.v2ex.ui.HeaderView;
@@ -22,7 +23,7 @@ import android.widget.Toast;
 /**
  * Created by Jackrex on 2/18/14.
  */
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends SwipeBackActivity {
 
     protected String TAG = BaseActivity.class.getSimpleName();
     protected String currentActivityName = TAG;

@@ -1,11 +1,18 @@
 package info.jackrex.v2ex.ui;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
+@SuppressLint("NewApi")
+@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class DepthPageTransformer implements ViewPager.PageTransformer {
 
 	private static float MIN_SCALE = 0.75f;
+	@SuppressLint("NewApi")
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	@Override
 	public void transformPage(View view, float position) {
 		// TODO Auto-generated method stub
